@@ -8,7 +8,7 @@ A fork is a personal copy of a repository hosted by a provider such as GitHub. C
 Connecting to your GitHub profile with SSH
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit. You can generate a new SSH key to use for authentication, then add it to the ssh-agent.
 
-Generating a new SSH key
+#Generating a new SSH key
 
 1-	Open Git Bash
 

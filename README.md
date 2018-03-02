@@ -14,34 +14,34 @@ Generating a new SSH key
 
 2-	Paste the test Below, Substituting in your GitHub email address:
 
-$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+      $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 This creates a new ssh key, using the provided email as a label.
 
-Generating public/private rsa key pair.
+      Generating public/private rsa key pair.
 
 3-	When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
-Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
+       Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
 
 4-	At the prompt, type a secure passphrase. Your passphrase is not visible in Git Bash window.
 
-Enter passphrase (empty for no passphrase): [Type a passphrase]
+      Enter passphrase (empty for no passphrase): [Type a passphrase]
 
-Enter same passphrase again: [Type passphrase again]
+      Enter same passphrase again: [Type passphrase again]
 
 
 Adding your SSH key to the ssh-agent
 
 1-	Ensure the ssh-agent is running:
 
-$ eval $(ssh-agent -s)
+     $ eval $(ssh-agent -s)
 
-Agent pid 59566
+     Agent pid 59566
 
 2- Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
 
-$ ssh-add ~/.ssh/id_rsa
+     $ ssh-add ~/.ssh/id_rsa
 
 Add the SSH key to your GitHub account.
 
@@ -50,7 +50,7 @@ To configure your GitHub account to use your new (or existing) SSH key, you'll a
 1-	Copy the SSH key to your clipboard.
 If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
 
-$ clip < ~/.ssh/id_rsa.pub
+      $ clip < ~/.ssh/id_rsa.pub
 
 
 2-	In the upper-right corner of any page, click your profile photo, then click Settings.
@@ -69,11 +69,11 @@ $ clip < ~/.ssh/id_rsa.pub
 
 Now, you are ready to create a fork and clone it using git command. Get back to Git Bash and type the following newlines (replace username and FolderName in the command with your GitHub username and your desired name, respectively).
 
-$ git clone git@github.com:username/FolderName.git
+      $ git clone git@github.com:username/FolderName.git
 
-$ cd FolderName
+      $ cd FolderName
 
-$ ls
+      $ ls
 
 Now, you should have folder “foldername” in your local computer and GitHub profile.
 
@@ -81,17 +81,17 @@ Now, you should have folder “foldername” in your local computer and GitHub p
 
 Configure Git with your full name and email address:
 
-$ git config --global user.name "FirstName LastName"
+      $ git config --global user.name "FirstName LastName"
 
-$ git config --global user.email "Email@smartwires.com"
+      $ git config --global user.email "Email@smartwires.com"
 
-$ git config user.name
+      $ git config user.name
 
-FirsName LastName
+       FirsName LastName
 
-$ git config user.email
+      $ git config user.email
 
-Email@smartwires.com
+       Email@smartwires.com
 
 This configures the default name and email address to use in commit messages. The --global flag causes the setting to apply to all repositories on your system, but per-repository configuration can override these. For more detail, see Customizing Git.
 
@@ -101,7 +101,7 @@ We're collecting pictures of the cutest animals on the web. Find a picture on a 
 
 Move the picture file to the folder “folderName” directory and then use the following command to add it to repository.
 
-$ git add   … filedirectory…
+     $ git add   … filedirectory…
 
 For Example: $ git add C:/User/ Jonathan.Yu/ForderName/ wood-mouse-3077319_1920.jpg
 
@@ -112,19 +112,19 @@ If you want to see your changes, add --staged:
 
 We must now commit the changes to move them from the staging area to our local repository. Be sure to specify a descriptive message:
 
-$ git commit --message="Adorable mouse"
+      $ git commit --message="Adorable mouse"
 
-      [master e6833ec] Adorable mouse
+        [master e6833ec] Adorable mouse
 
-      2 files changed, 2 insertions(+) 
+        2 files changed, 2 insertions(+) 
 
-      create mode 100644 01 FolderName/wood-mouse-3077319_1920.jpg
+        create mode 100644 01 FolderName/wood-mouse-3077319_1920.jpg
 
 4-Sharing Changes
 
 The changes have been committed to your local repository, but they not be accessible by other team members. To make the changes visible, they need to be pushed to your fork:
 
-$ git push
+     $ git push
 
 You should now be able to browse your changes in a browser by navigating to:  https://github.com/youraccount/training
 

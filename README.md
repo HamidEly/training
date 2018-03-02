@@ -1,7 +1,9 @@
 # SmartWires/Training/01-hello-git
 
 Exercises:
+
 1- Creating a Fork
+
 A fork is a personal copy of a repository hosted by a provider such as GitHub. Create a fork and clone it.
 Connecting to your GitHub profile with SSH
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit. You can generate a new SSH key to use for authentication, then add it to the ssh-agent.
@@ -9,6 +11,7 @@ Using the SSH protocol, you can connect and authenticate to remote servers and s
 Generating a new SSH key
 1-	Open Git Bash
 2-	Paste the test Below, Substituting in your GitHub email address:
+
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 This creates a new ssh key, using the provided email as a label.

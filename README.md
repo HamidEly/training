@@ -8,7 +8,7 @@ A fork is a personal copy of a repository hosted by a provider such as GitHub. C
 Connecting to your GitHub profile with SSH
 Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit. You can generate a new SSH key to use for authentication, then add it to the ssh-agent.
 
-#Generating a new SSH key
+Generating a new SSH key
 
 1-	Open Git Bash
 
@@ -107,18 +107,18 @@ For Example: $ git add C:/User/ Jonathan.Yu/ForderName/ wood-mouse-3077319_1920.
 
 If you want to see your changes, add --staged:
 
-$ git diff --staged
+      $ git diff --staged
 
 
 We must now commit the changes to move them from the staging area to our local repository. Be sure to specify a descriptive message:
 
 $ git commit --message="Adorable mouse"
 
-[master e6833ec] Adorable mouse
+      [master e6833ec] Adorable mouse
 
-2 files changed, 2 insertions(+) 
+      2 files changed, 2 insertions(+) 
 
-create mode 100644 01 FolderName/wood-mouse-3077319_1920.jpg
+      create mode 100644 01 FolderName/wood-mouse-3077319_1920.jpg
 
 4-Sharing Changes
 

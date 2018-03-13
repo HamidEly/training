@@ -1,4 +1,4 @@
-# SmartWires/Training/01-hello-git
+﻿# SmartWires/Training/01-hello-git (First version)
 
 Exercises:
 
